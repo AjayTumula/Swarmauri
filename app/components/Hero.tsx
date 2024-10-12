@@ -2,22 +2,25 @@
 import Image from "next/image";
 import { PrimaryButton, SecondaryButton } from "../ui-kit/Button";
 import HeroCard from "../ui-kit/HeroCard";
-import { title } from "process";
 
 const ReleaseData = [
     {
+        id: 1,
         title: "Sdk release v0.5.0",
         date: "Oct 2024"
     },
     {
+        id: 2,
         title: "Sdk release v0.4.1",
         date: "Sep 2024"
     },
     {
+        id: 3,
         title: "Serialization and Swarmauri",
         date: "Jul 2024"
     },
     {
+        id: 4,
         title: "The swarmauri sdk",
         date: "Apr 2024"
     },
@@ -48,8 +51,10 @@ const Hero = () => {
 
         <div className="mt-12 mb-24">
             {
-                ReleaseData.map((release) => (
-                    <HeroCard title={release.title} date={release.date}/>
+                ReleaseData.map(({id, title, date}) => (
+                    <div key={id}>
+                        <HeroCard title={title} date={date}/>
+                    </div>
                 ))
             }
             
