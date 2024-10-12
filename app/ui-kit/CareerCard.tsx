@@ -12,19 +12,19 @@ const CareerCard = ({title, description, jobType, location}: {
             <div className="text-xl pt-4 lg:text-2xl">{title}</div>
             <div className="text-sm pt-4 lg:text-lg">{description}</div>    
             <div className="flex pt-4">
-                <div className="flex justify-between border-2 rounded-full p-2 mr-3 items-center md:items-center">
-                    <div className="mr-2 text-[15px] lg:text-[12px]">
+                <div className="flex justify-between lg:border-2 lg:rounded-full p-2 mr-3 items-center md:items-center">
+                    <div className="mr-2 text-[10px] md:text-[10px] lg:text-[12px]">
                         <i className="fa-solid fa-location-dot" style={{color: '#ffffff'}}></i>
                     </div>
-                    <div className="text-[9px] lg:text-[12px]">
+                    <div className="text-[12px] md:text-[12px] lg:text-[12px]">
                         {jobType}
                     </div>
                 </div>
-                <div className="flex justify-between border-2 rounded-full p-2 items-center md:items-center">
-                    <div className="mr-2 text-[15px] lg:text-[12px]">
+                <div className="flex justify-between lg:border-2 lg:rounded-full p-2 items-center md:items-center">
+                    <div className="mr-2 text-[10px] md:text-[10px] lg:text-[12px]">
                         <i className="fa-regular fa-clock" style={{color: '#ffffff'}}></i>
                     </div>
-                    <div className="text-[10px] lg:text-[12px]">
+                    <div className="text-[12px] md:text-[12px] lg:text-[12px]">
                         {location}
                     </div>
                 </div>               
